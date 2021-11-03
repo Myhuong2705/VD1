@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style2.css" />
+    <script>
+      function myFunction() {
+        document.getElementById("xh").innerHTML =
+          "Bạn đã đăng ký thành công!!!";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: #3366cc">
+      Đăng ký du lịch
+    </h1>
+    <table style="wight =50%">
+      <tr>
+        <td>Họ và tên:</td>
+        <td>
+          <form>
+            <input type="text" name="name" value="Phạm Ngọc Cẩm Đào" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Địa chỉ:</td>
+        <td>
+          <form>
+            <input type="text" name="dc" value="227 Nguyễn Văn Cừ" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Điện thoại:</td>
+        <td>
+          <form>
+            <input type="number" name="sdt" value="8361056" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Khách Việt Nam:</td>
+        <td>
+          <form>
+            <input type="checkbox" name="khach" value="VN" checked />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Chọn tour:</td>
+        <td>
+          <form>
+            <select>
+              <optgroup label="Miền Bắc">
+                <option>Hà Nội - Hạ Long- Sapa</option>
+                <option>Hà Nội - Chùa Hương - Ninh Bình</option>
+                <option>Hà Nội - Cát Bà - Tuấn Châu</option>
+              </optgroup>
+              <optgroup label="Miền Trung">
+                <option>Huế - Bạch Mã - Đà Nẵng</option>
+                <option>Nha Trang - Đà Lạt</option>
+                <option>Buôn Ma Thuật - Gia Lai - KonTum </option>
+              </optgroup>
+              <optgroup label="Miền Nam">
+                <option>Tp Hồ Chí Minh - Cần Thơ - Cà Mau</option>
+                <option>TP Hồ Chí Minh - Mỹ Tho</option>
+              </optgroup>
+            </select>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <form>
+            <fieldset style="  width: 350px; height: 55px">
+              <legend style=" color:#ff471a;">Số lượng đoàn khách</legend>
+              <d> Người lớn</d>
+              <input
+                style=" width: 100px; height: 15px"
+                type="number"
+                name="sn"
+                value=""
+              />
+              <d> Trẻ em</d>
+              <input
+                style=" width: 100px; height: 15px"
+                type="number"
+                name="sn"
+                value=""
+              />
+            </fieldset>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td>Ghi chú thêm:</td>
+        <td>
+          <textarea rows="2" cols="70">
+            Có 2 trẻ em dưới 6 tuổi 
+            Có 2 người ăn chay
+          </textarea>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2"><button onclick="myFunction()">Đồng ý</button></th>
+      </tr>
+      <tr>
+        <th class="for" id="xh" colspan="2"></th>
+      </tr>
+    </table>
+  </body>
+</html>
